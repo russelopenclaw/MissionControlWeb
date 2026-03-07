@@ -1,0 +1,9 @@
+{
+  "build": {
+    "env": {
+      "DATABASE_URL": "postgresql://alfred:AlfredDB2026Secure@192.168.1.56:5432/mission_control",
+      "AUTH_SECRET": "mission-control-web-secret-key-2026",
+      "AUTH_PASSWORD": "mission-control-2026"
+    }
+  }
+}
