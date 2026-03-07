@@ -18,6 +18,12 @@ interface Task {
   priority: string;
 }
 
+interface TasksData {
+  inProgress: Task[];
+  backlog: Task[];
+  done: Task[];
+}
+
 interface SystemStatus {
   ollama: boolean;
   gateway: boolean;
@@ -26,7 +32,7 @@ interface SystemStatus {
 
 export default function Dashboard() {
   const [agents, setAgents] = useState<Agent[]>([]);
-  const [tasks, setTasks] = useState<Task[]>({ inProgress: [], backlog: [], done: [] });
+  const [tasks, setTasks] = useState<TasksData>({ inProgress: [], backlog: [], done: [] });
   const [systemStatus, setSystemStatus] = useState<SystemStatus | null>(null);
   const [loading, setLoading] = useState(true);
 
