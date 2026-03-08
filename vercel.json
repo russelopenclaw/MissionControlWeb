@@ -1,5 +1,7 @@
 {
-  "name": "mission-control-web",
+  "protection": {
+    "deployment": "none"
+  },
   "build": {
     "env": {
       "DATABASE_URL": "postgresql://alfred:AlfredDB2026Secure@192.168.1.56:5432/mission_control",
